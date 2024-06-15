@@ -7,15 +7,6 @@ const spanPrecioFinal = document.querySelector("span#precioFinal")
 const spanVerUltimoAlquiler = document.querySelector("span#verUltimoAlquiler")
 
 const arrayHistorial = []
-// function cargarHora(){
-
-//     let hora = inputHora.value
-//     if (hora >= 1 & hora <= 8){
-//         return parseInt(hora)
-//     }else {
-//         alertHora.innerHTML += `<h1>Por favor F5 y pon como máximo 8 horas </h1>`
-//     }
-// }
 
 function cargarPrecioProductos(){
     arrayProductos.forEach((producto)=> {

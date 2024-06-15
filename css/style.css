@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));    
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 5px;
+}
+nav h1{
+    margin: auto;
+    font-size: 30px;
+}
+
+nav a{
+    display: flex;
+}
+nav .logo img{
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 5px;
+    box-shadow: rgb(255, 255, 255) 0 0 5px;
+}
+nav .carrito img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 1s;
+    margin: auto;
+    margin-right: 5px;
+}
+nav .carrito img:hover{
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+h1{
+    text-align: center;
+    color:white;
+    text-shadow: rgb(192, 5, 192) 0 0 5px;
+    text-decoration: underline purple;
+}
+h2,h3,h4{
+    color:white;
+    text-decoration: underline purple;
+    text-align: center;
+}
+h3{
+    color:white;
+    text-decoration: underline purple;
+}
+ol{
+    color: white;
+    font-size: 1.4em;
+    text-shadow: thistle 0 0 5px;
+    list-style-type: decimal;
+}
+p{
+    color: rgb(192, 5, 192);
+}
+strong{
+    text-decoration: underline rgba(255, 255, 255, 0.56);
+    text-shadow: rgb(192, 5, 192) 0 0 4px;
+}
+
+.tarjetas-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjetas-productos section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    height: 220px;
+    width: 200px;
+    margin: 15px 1px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3); 
+}
+.tarjetas-productos section span{
+    font-size: 80px;
+}
+.tarjetas-productos section p{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.seleccionar{
+    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgb(192, 5, 192) 0 0 10px ;
+    margin: 20px;
+}
+label{
+    color: white;
+}
+select{
+    color: white
+}
+section div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+button{
+    box-shadow: rgb(251, 247, 251) 0 0 4px;
+}
+option{
+    background: purple;
+}
+input{
+    color:white
+}
+.importe{
+    font-size: 30px;
+    color: white;
+    background-color: rgba(185, 90, 236, 0.496);
+    border-radius: 5px;
+    box-shadow:  rgb(251, 247, 251) 0 0 6px;
+}
+.importe strong{
+    cursor: help;
+}
+.importe .ultimaCompra{
+    position: absolute;
+    margin-left: 60px;
+    cursor: pointer;
+    justify-content: end;
+    transition: 1s;
+}
+
+    .importe .ultimaCompra:hover{
+    filter: drop-shadow(0px 0px 5px white);
+}
+.cuadroDeHora{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: purple;
+    color: red ;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ciber FlyCity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">    
+        <script defer src="./js/variables.js"></script>
+        <script defer src="./js/class.totalcarrito.js"></script>        
+        <script defer src="./js/script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a class="logo"><img src="./img/Logo.jpg" alt=""></a>
+            <h1>Ciber FlyCity</h1>
+            <a class="carrito"><img src="./img/carrito.png" alt="carrito" title="carrito"></a>
+        </nav>
+        <main>
+            <h2>Del Ciber a tu casa</h2>
+            <h3>PC 🖥️🖱️</h3>
+            <article class="tarjetas-productos">
+                <section>
+                    <span>🖥️</span>
+                    <p><strong>PC</strong> <br>Precio x hora:<br> <strong>$1000</strong></p>
+                </section>
+            </article>
+            <h2>PlayStation 🎮</h2>
+            <article class="tarjetas-productos">
+                <section>
+                    <span>🎮</span>
+                    <p><strong>PlayStation 5</strong> <br>Precio x hora:<br> <strong id="pre">2000</strong></p>
+                </section>
+                <section>
+                    <span>🎮</span>
+                    <p><strong>PlayStation 4</strong> <br>Precio x hora:<br> <strong id="pre">1500</strong></p>                
+                </section>
+                <section>
+                    <span>🎮</span>
+                    <p><strong>PlayStation 3</strong> <br>Precio x hora:<br> <strong id="pre">1000</strong></p>
+                </section>
+                <section>
+                    <span>🎮</span>
+                    <p><strong>PlayStation 2</strong> <br>Precio x hora:<br> <strong id="pre">900</strong></p>
+                </section>
+            </article>
+            <h2>🤖 Xbox y Realidad Virtual 🤖</h2>
+            <article class="tarjetas-productos">
+                <section>
+                    <span>🤖</span>
+                    <p><strong>XBox</strong> <br>Precio x hora:<br> <strong id="pre">1200</strong></p>
+                </section>
+                <section>
+                    <span>🤖</span>
+                    <p><strong>Realidad Virtual</strong> <br>Precio x hora:<br> <strong id="pre">1500</strong></p>
+                </section>
+            </article>
+            <section class="seleccionar">
+                <label for="productos">Selecciona el producto que deseas alquilar</label>
+                <select id="productos">
+                    <option selected disabled>Seleccionar...</option>
+                    </select>
+
+                    <label for="horas">Ingresa cuantas horas (max: 8)</label>
+                    <input type="number" id="horas" value="1" min="1" max="8" step="1">
+
+                    <label for="envio">Selecciona los kms</label>
+                    <select id="envio">
+                        <option selected disabled>Seleccionar...</option>
+                </select>
+                <div>
+                    <button id="pagar">Pagar</button>
+                </div>
+                <div>
+                    <p class="importe">
+                        Precio final + <strong title="4%"> iva</strong> $ 
+                        <span id="precioFinal">0.00</span>
+                        <span class="ultimaCompra" title="Ultima Compra" id="verUltimoAlquiler">🕹️</span>
+                    </p>
+                </div>
+                </section>
+                <div class="cuadroDeHora" id="cuadroDeAlerta"></div>
+        </main>
+        <footer>
+            <nav><h1>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</h1></nav>
+        </footer>
+    </body>
+</html>
